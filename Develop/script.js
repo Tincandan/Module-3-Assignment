@@ -32,11 +32,11 @@ characterAmountRange.addEventListener('input', syncCharacterAmount);
 generateBtn.addEventListener("click", writePassword);
 
 form.addEventListener("waiting", writePassword); 
-  
 
 // Write password to the #password input
-function writePassword()
+function writePassword(event)
 {
+  event.preventDefault()
     const characterAmount = characterAmountNumber.value
     const includeUppercase = includeUppercaseElement.checked
     const includeNumbers = includeNumbersElement.checked
