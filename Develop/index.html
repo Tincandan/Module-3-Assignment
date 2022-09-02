@@ -25,7 +25,32 @@
           ></textarea>
         </div>
         <div class="card-footer">
+          <form id="passwordGeneratorForm">
+            <div>
+              <label for="">Number of Characters</label>
+              <input type="range" min="8" max="125" value="8" 
+              id="characterAmountRange">
+              <input type="number" min="8" max="125" value="8" 
+              id="characterAmountNumber">
+            </div>
+
+            <div>
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+            </div>
+
+            <div>
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+            </div>
+
+            <div>
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+            </div>
+          
           <button id="generate" class="btn">Generate Password</button>
+          </form>
         </div>
       </div>
     </div>
